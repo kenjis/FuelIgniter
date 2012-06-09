@@ -10,6 +10,14 @@
  * @link       http://fuelphp.com
  */
 
+// Load CodeIgniter constants
+require APPPATH . 'classes/ci/constants.php';
+// Load CodeIgniter functions
+require APPPATH . 'classes/ci/functions.php';
+
+// set default charset
+ini_set('default_charset', 'UTF-8');
+
 return array(
 
 	/**

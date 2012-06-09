@@ -1,7 +1,10 @@
 <?php
 return array(
-	'_root_'  => 'welcome/index',  // The default route
+	'_root_'  => 'pages/view',  // The default route
 	'_404_'   => 'welcome/404',    // The main 404 route
 	
-	'hello(/:name)?' => array('welcome/hello', 'name' => 'hello'),
+	'news/create' => 'news/create',
+	'news/(:any)' => 'news/view/$1',
+	'news'        => 'news',
+	'(:any)'      => 'pages/view/$1',
 );

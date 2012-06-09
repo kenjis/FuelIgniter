@@ -18,6 +18,12 @@ abstract class Database_Result extends Fuel\Core\Database_Result
 	public function row_array($n = 0)
 	{
 		$result = $this->as_array();
+
+		if (count($result) === 0)
+		{
+			return $result;
+		}
+
 		return $result[$n];
 	}
 }
